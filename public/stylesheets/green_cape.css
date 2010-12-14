@@ -1,0 +1,233 @@
+ body {
+  background: #8cc63e url('../images/body_bg.jpg') repeat-x top;
+  font-family:verdana, helvetica, arial, sans-serif;
+  font-size: 62.5%;
+  line-height: 22px;
+  padding: 50px 0px 50px 0px;
+}
+
+#admin {
+	
+	color: white;
+}
+
+#admin a{
+	
+	color: white;
+	font-size: 150%;
+}
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+.clearfix {
+  display: inline-block;
+}
+html[xmlns] .clearfix {
+  display: block;
+}
+
+* html .clearfix {
+  height: 1%;
+}
+
+span {
+  font-weight: bold;
+  padding: 2px;
+}
+
+h1 {
+  background: url('../images/header_logo.gif') no-repeat;
+  text-indent: -9999px;
+  height: 130px;
+  width: 160px;
+  float:left;
+}
+
+h4 {
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+.intro {
+  padding-bottom: 5px;
+}
+
+div#main {
+  width: 950px;
+  background-color: #70a02f;
+  margin: auto;
+}
+
+div#content {
+  width: 940px;
+  padding: 5px;
+}
+
+div#content div#header {
+  padding-left: 60px;
+  height: 130px;
+  background: #fff url('../images/header_bg.jpg') repeat-x top;
+  position: relative;
+}
+
+div#content div#header ul#nav {
+  padding: 0px 18px 0px 22px;
+  background: #fff url('../images/topnav_bg.gif') no-repeat bottom;
+  position: absolute;
+  width: 263px;
+  left: 342px;
+  bottom: 0px;
+}
+
+div#content div#header ul#nav li{
+  padding: 19px 27px 7px 0px;
+  float: left;
+  font-size: 1.4em;
+  display: block;
+}
+
+div#content div#header ul#nav li a, div#content div#header ul#nav li a:visited {
+  text-decoration: none;
+  color: #677b51;
+}
+
+div#content div#header ul#nav li a:hover, div#content div#header ul#nav li a:active {
+  color: #8ac240;
+}
+
+div#content div#header ul#nav li.last {
+  padding: 19px 0px 6px 0px;
+}
+
+div#content div#footer {
+  background: #fff  url('../images/footer_bg.jpg') repeat-x top;
+  height: 125px;
+}
+
+div#content div.section {
+  background: #fff url('../images/page_section_bg.jpg') repeat-x bottom;
+  color: #8F9D7E;
+  padding: 40px 60px 20px 60px;
+  width: 820px;
+  font-size:  1.4em;
+  clear: both;
+  overflow: auto;
+}
+
+div#content div.section ul li{
+}
+div#content div.section ul li a{
+  height: 50px;
+  padding-top: 5px;
+  display: block;
+  padding-left: 50px;
+  background: url('../images/icon_pdf.png') no-repeat left;
+  text-decoration: none;
+  color: #677b51;
+}
+
+div#content div.section ul li a:hover {
+  color: #8ac240;
+}
+
+div.section img {
+  float:right;
+  margin: 0 0px 27px 145px;
+}
+
+div#content div.section p {
+  margin-top: 10px;
+}
+
+div#content div.about {
+  background: #999933 url('../images/about_bg.jpg') no-repeat bottom;
+  color: #fff;
+  padding: 0px 0px 0px 60px;
+  height: 228px;
+}
+
+div#content div.about p {
+  width:536px;
+  font-size:1.35em;
+  margin:15px 0 0 0;
+}
+
+div#content h2#about_us {
+  position: relative;
+  top: 24px;
+  left: 0;
+  height: 100px;
+  background: url('../images/about_hding.png') no-repeat;
+}
+
+div#content div#contact_us {
+  position: relative;
+  background: #fff url('../images/page_section_bg.jpg') repeat-x bottom;
+  color: #8F9D7E;
+  padding: 40px 20px 20px 60px;
+  height: 230px;
+  font-size:  1.4em;
+  clear: left;
+}
+
+div#content div#contact_us p.address {
+  line-height: 30px;
+  width: 220px;
+  float:left;
+}
+
+div#email_us {
+  position: absolute;
+  bottom: 36px;
+  right: 123px;
+}
+
+div#contact_us div#email_us a {
+  display: block;
+  background: url('../images/email_us.jpg') no-repeat;
+  text-indent: -9999px;
+  width: 163px;
+  height: 151px;
+}
+
+div#contact_us div#email_us a:focus {
+  outline:  none;
+}
+
+div#content h2 {
+   text-indent: -9999px;
+   height: 38px;
+   margin-bottom: 9px;
+}
+
+div#content h2#papers {
+  background: url('../images/headings.gif') no-repeat 0px 0px;
+}
+
+div#content h2#team {
+  background: url('../images/headings.gif') no-repeat 0px -38px;
+}
+
+div#content h2#contact {
+  background: url('../images/headings.gif') no-repeat 0px -76px;
+}
+
+div#footer {
+  padding-left: 60px;
+}
+
+#footer img#sponsor_logos {
+  padding: 26px 0px 0px 0px;
+  float:left;
+}
+
+#footer #copyright {
+  padding: 15px 60px 0px 0px;
+  float:right;
+}

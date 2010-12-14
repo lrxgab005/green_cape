@@ -1,7 +1,17 @@
 GreenCape::Application.routes.draw do
   get "admin/index"
+  get "admin/main"
+  get "home/index"
+  get "home/about"
+  get "home/contact"
+  
+
+  resources :papers
+  resources :members
+  resources :admin
 
   devise_for :users
+  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
@@ -51,7 +61,7 @@ GreenCape::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  root :to => "Admin#index"
+  root :to => "Home#index"
 
   # See how all your routes lay out with "rake routes"
 
