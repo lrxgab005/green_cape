@@ -6,17 +6,6 @@
   padding: 50px 0px 50px 0px;
 }
 
-#admin {
-	
-	color: white;
-}
-
-#admin a{
-	
-	color: white;
-	font-size: 150%;
-}
-
 .clearfix:after {
   content: ".";
   display: block;

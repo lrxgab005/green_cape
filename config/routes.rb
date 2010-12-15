@@ -1,9 +1,10 @@
 GreenCape::Application.routes.draw do
   get "admin/index"
-  get "admin/main"
+  get "admin/edit_papers"
   get "home/index"
   get "home/about"
   get "home/contact"
+  get "members/user_display"
   
 
   resources :papers

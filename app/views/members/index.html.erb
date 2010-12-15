@@ -1,34 +1,28 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
-  "http://www.w3.org/TR/html4/strict.dtd">
+<h1>Listing members</h1>
 
-<div class="about">
-  <h2 id="about_us">About Us, powering the renewable evolution</h2>
-  <p></p>
-</div>
 <div class="section">
-  <img src="/images/team_img.jpg"  alt="team" >
   <h2 id="team">Team</h2>
   <p>The GreenCape team is committed to ensuring the green economy flourishes in the Western Cape</p>
-  <p> <span>Francois du Plessis</span><br/>
 
-      CEO: GreenCape Initiative
-  </p>
-  <p>
-    <span>Nigel Gwynne-Evans</span><br/>
-    Director: Manufacturing Industry Development, Economic Development &amp; Tourism
-  </p>
-  <p>
-    <span>Dipolelo J Elford</span><br/>
+<% @members.each do |member| %>
 
-    Chief Director Environmental and Land Planning, Department of Environmental Affairs and Development Planning
-  </p>
-    <p>
-    <span>Sarah Ward</span><br/>
-    Head: Energy &amp; Climate Change Branch, Environmental Resource Management Department
-    </p>
-    <p>
-    <span>Fernel Abrahams</span><br/>
+<td class="list_description">
+    <dl>
+      <dt><%= member.first_name%> <%= member.last_name%></dt>
+	  <dt><%= member.position%>: <%= member.description%></dt>
+    </dl>
+</td>
 
-    Manager: Renewable Energy Technologies, Department of Economic Development &amp; Tourism
-  </p>
+<tr>
+  <td><%= link_to 'Show', member %></td>
+  <td><%= link_to 'Edit', edit_member_path(member) %></td>
+  <td><%= link_to 'Destroy', member, :confirm => 'Are you sure?', :method => :delete %></td>
+</tr>
+<% end %>
+
+
+<br />
+
+<%= link_to 'New Member', new_member_path %>
+
 </div>

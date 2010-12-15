@@ -1,0 +1,16 @@
+<div class="section">
+  <img src="/images/team_img.jpg"  alt="team" >
+  <h2 id="team">Team</h2>
+  <p>The GreenCape team is committed to ensuring the green economy flourishes in the Western Cape</p>
+
+<% @members.each do |member| %>
+
+<p>
+  <span><%= member.first_name%> <%= member.last_name%></span><br/>
+  <%= member.position%>: <%= member.description%>
+</p>
+
+
+<% end %>
+</table>
+</div>
