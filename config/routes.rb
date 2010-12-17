@@ -5,6 +5,7 @@ GreenCape::Application.routes.draw do
   get "home/about"
   get "home/contact"
   get "members/user_display"
+  get "papers/user_display"
   
 
   resources :papers
