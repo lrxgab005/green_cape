@@ -9,7 +9,7 @@
   <title>Green Cape - Admin</title>
 </head>
 
-<h1 id='admin'>Administrator Page<h1/>
+<h1 id='admin'>Administrator Page - Logged in as  : <%= @user_loggedin %><h1/>
 	<p><%=link_to 'Edit Team', members_path %>  |  <%=link_to 'Edit Papers', admin_edit_papers_path %></p>
 <hr />
 <%= yield %>

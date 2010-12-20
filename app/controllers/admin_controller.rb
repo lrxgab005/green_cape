@@ -3,6 +3,7 @@ class AdminController < ActionController::Base
   layout "admin"
 
   def index
+    @user_loggedin = current_user.email
   end
   
 end

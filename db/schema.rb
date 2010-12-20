@@ -16,7 +16,7 @@ ActiveRecord::Schema.define(:version => 20101215133359) do
     t.string   "first_name"
     t.string   "last_name"
     t.string   "position"
-    t.string   "description"
+    t.text     "description"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

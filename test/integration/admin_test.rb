@@ -2,21 +2,19 @@ require 'integration_test_helper'
 
 class AdminTest < ActionController::IntegrationTest
 
+  user = Factory(:user)
+  
   test "admin login" do
-    user = Factory(:user, :name => "sdfgsd", :password => "", :password_confirmation => "")
     
     visit '/admin'
     assert page.has_content?('Email')
-    fill_in 'user_email', :with => 'test@email.com'
-    check 'user_remember_me'
+    fill_in 'user_email', :with => user.email
+    
     assert page.has_content?('Password')
-    fill_in 'user_password', :with => 'password'
-    click 'Sign in'
+    fill_in 'user_password', :with => user.password
     assert page.has_content?('Remember me')
-    assert page.has_content?('Sign up')
-    assert page.has_content?('Forgot your password?')
-    
-    
+    check 'user_remember_me'
+    click 'Sign in'
     
     
     save_and_open_page
