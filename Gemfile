@@ -21,6 +21,7 @@ gem 'ruby-debug19'
 gem 'launchy'
 gem 'capybara','0.3.9'
 gem 'factory_girl_rails'
+gem 'paperclip'
 gem "devise", :git => "git://github.com/plataformatec/devise.git"
 gem 'omniauth'
 end

@@ -118,6 +118,9 @@ GEM
       oa-oauth (= 0.1.6)
       oa-openid (= 0.1.6)
     orm_adapter (0.0.3)
+    paperclip (2.3.8)
+      activerecord
+      activesupport
     polyglot (0.3.1)
     pyu-ruby-sasl (0.0.3.2)
     rack (1.2.1)
@@ -181,6 +184,7 @@ DEPENDENCIES
   factory_girl_rails
   launchy
   omniauth
+  paperclip
   rails (= 3.0.1)
   ruby-debug19
   sqlite3-ruby
